@@ -569,14 +569,14 @@ _C.AVA = CfgNode()
 
 # Directory path of frames.
 # _C.AVA.FRAME_DIR = "/mnt/fair-flash3-east/ava_trainval_frames.img/"
-_C.AVA.FRAME_DIR = "/usr/home/sut/datasets/AVA/frames/"
+_C.AVA.FRAME_DIR = "/mnt/share/sda1/dataset/STAD/AVA_Dataset/frames/"
 
 # Directory path for files of frame lists.
 # _C.AVA.FRAME_LIST_DIR = (
 #     "/mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/"
 # )
 _C.AVA.FRAME_LIST_DIR = (
-    "/usr/home/sut/datasets/AVA/frame_lists/"
+    "/mnt/share/sda1/dataset/STAD/AVA_Dataset/frame_lists/"
 )
 
 # Directory path for annotation files.
@@ -584,7 +584,7 @@ _C.AVA.FRAME_LIST_DIR = (
 #     "/mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/"
 # )
 _C.AVA.ANNOTATION_DIR = (
-    "/usr/home/sut/datasets/AVA/annotations/"
+    "/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations/"
 )
 
 # Filenames of training samples list files.
