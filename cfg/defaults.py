@@ -584,7 +584,7 @@ _C.AVA.FRAME_LIST_DIR = (
 #     "/mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/"
 # )
 _C.AVA.ANNOTATION_DIR = (
-    "/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations/"
+    "/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations//ava_v2.2/"
 )
 
 # Filenames of training samples list files.

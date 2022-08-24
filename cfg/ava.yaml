@@ -41,7 +41,7 @@ BACKUP_DIR: "backup/ava"
 DEMO:
   ENABLE: False
   OUT_PATH: "ava_detections/videos"
-  LABEL_FILE_PATH: "/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations/ava_classnames.json"
+  LABEL_FILE_PATH: "/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations/ava_v2.2/ava_classnames.json"
 RNG_SEED: 1
 
 
