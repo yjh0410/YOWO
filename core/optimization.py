@@ -94,6 +94,7 @@ def test_ava(cfg, epoch, model, test_loader):
                     x2 = float(box[0]+box[2]/2.0)
                     y2 = float(box[1]+box[3]/2.0)
                     det_conf = float(box[4])
+                    print(x1, y1, x2, y2)
                     cls_out = [det_conf * x.cpu().numpy() for x in box[5]]
                     preds.append([[x1,y1,x2,y2], cls_out, metadata[i][:2].tolist()])
 
