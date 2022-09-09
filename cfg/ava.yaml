@@ -1,10 +1,10 @@
 TRAIN:
-  RESUME_PATH: None # "/home/k545/spatial-temporal-action-detection/backup/ava/yowo_ava_32f_s1_best_ap_01905.pth"
+  RESUME_PATH: "/home/k545/spatial-temporal-action-detection/YOWO/weights/yowo_ava_32f_s1_best_ap_01905.pth"
   DATASET: ava  # `ava`, `ucf24` or `jhmdb21`
   BATCH_SIZE: 6
   TOTAL_BATCH_SIZE: 128
   LEARNING_RATE: 1e-4
-  EVALUATE: True
+  EVALUATE:  True
   MODE: "val"  # `train`, `test` or `val`
   BEGIN_EPOCH: 1
   END_EPOCH: 10

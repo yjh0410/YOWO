@@ -55,7 +55,7 @@ if cfg.TRAIN.RESUME_PATH:
 ####### Test parameters
 # ---------------------------------------------------------------
 
-labelmap, _       = read_labelmap("/usr/home/sut/datasets/AVA/annotations/ava_action_list_v2.2.pbtxt")
+labelmap, _       = read_labelmap("/mnt/share/sda1/dataset/STAD/AVA_Dataset/annotations/ava_v2.2/ava_action_list_v2.2.pbtxt")
 num_classes       = cfg.MODEL.NUM_CLASSES
 clip_length		  = cfg.DATA.NUM_FRAMES
 crop_size 		  = cfg.DATA.TEST_CROP_SIZE
@@ -75,7 +75,7 @@ model.eval()
 
 ####### Data preparation and inference 
 # ---------------------------------------------------------------
-video_path = '/usr/home/sut/datasets/AVA/video_done/9Y_l9NsnYE0.mp4'
+video_path = '/mnt/share/sda1/dataset/STAD/AVA_Dataset/videos_15min/9Y_l9NsnYE0.mp4'
 cap = cv2.VideoCapture(video_path)
 
 cnt = 1
@@ -134,6 +134,7 @@ while(cap.isOpened()):
 
         preds = []
         all_boxes = get_region_boxes_ava(output, conf_thresh_valid, num_classes, anchors, num_anchors, 0, 1)
+        print(output.shape)
         for i in range(output.size(0)):
             boxes = all_boxes[i]
             boxes = nms(boxes, nms_thresh)

@@ -316,6 +316,7 @@ class binary_FocalLoss(nn.Module):
         # weight_p0 = 1 - weight_matrix[targets == 0]
         p_1 = inputs[targets == 1]
         p_0 = inputs[targets == 0]
+        print(inputs.shape, targets.shape)
 
         # loss = torch.sum(torch.log(p_1)) + torch.sum(torch.log(1 - p_0))  # origin bce loss
         loss1 = torch.pow(1 - p_1, self.gamma) * torch.log(p_1) * weight_p1
